@@ -1,59 +1,73 @@
-/*
-Error: File to import not found or unreadable: cinemaTvStyles.
-        on line 114 of design.scss
+div, main, header, footer, section {
+  min-height: 10px; }
 
-109:     }
-110:   }
-111: }
-112: 
-113: @media screen and (max-width: 1440px) {
-114:   @import "cinemaTvStyles";
-115: }
+body {
+  padding: 0 15%;
+  color: #353434; }
 
-Backtrace:
-design.scss:114
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/check_nesting.rb:108:in `rescue in invalid_import_parent?'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/check_nesting.rb:101:in `invalid_import_parent?'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/check_nesting.rb:171:in `try_send'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/check_nesting.rb:14:in `visit'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:38:in `visit'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/check_nesting.rb:59:in `visit_root'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:24:in `visit'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/root_node.rb:35:in `css_tree'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Users/macbookpro/.rvm/gems/ruby-2.6.2/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: cinemaTvStyles.\A         on line 114 of design.scss\A \A 109:     }\A 110:   }\A 111: }\A 112: \A 113: @media screen and (max-width: 1440px) {\A 114:   @import \"cinemaTvStyles\";\A 115: }"; }
+header {
+  min-height: 20%;
+  display: flex; }
+  header div[id="apropos"] {
+    width: 50%;
+    font-size: 1.4em;
+    font-weight: bolder;
+    text-decoration: underline;
+    padding: 2.7% 0;
+    text-align: center; }
+  header div[id="search"] {
+    width: 50%;
+    text-align: end;
+    padding: 2.7% 0; }
+
+section[id="main-movie"] {
+  min-height: 250px;
+  border: 1px solid black; }
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0 0 0; }
+  main div[id="sideBar"] {
+    width: 18%; }
+    main div[id="sideBar"] .select-movie {
+      border: 1px solid gray;
+      padding: 15% 0; }
+    main div[id="sideBar"] .checkb {
+      padding-left: 20%; }
+  main div[id="movies"] {
+    width: 80%; }
+    main div[id="movies"] div[class="movie"] {
+      background-color: #f0efef;
+      display: flex;
+      padding: 2% 2% 2% 2%;
+      justify-content: flex-end;
+      margin-bottom: 2%; }
+      main div[id="movies"] div[class="movie"] div[class="thumbnail"] {
+        width: 15%; }
+        main div[id="movies"] div[class="movie"] div[class="thumbnail"] img {
+          width: 75px;
+          height: 115px; }
+      main div[id="movies"] div[class="movie"] div[class="article"] {
+        width: 75%;
+        display: flex;
+        flex-direction: column; }
+        main div[id="movies"] div[class="movie"] div[class="article"] div[class="movie-name-stars"] {
+          display: flex; }
+          main div[id="movies"] div[class="movie"] div[class="article"] div[class="movie-name-stars"] .movie-name {
+            width: 28%;
+            font-weight: 700;
+            font-size: 1.2em; }
+          main div[id="movies"] div[class="movie"] div[class="article"] div[class="movie-name-stars"] .movie-stars {
+            width: 28%; }
+          main div[id="movies"] div[class="movie"] div[class="article"] div[class="movie-name-stars"] .movie-votes {
+            width: 28%; }
+        main div[id="movies"] div[class="movie"] div[class="article"] div[class="pop-link"] {
+          margin-left: 55%;
+          width: 40%;
+          background-color: #3086d6;
+          border-radius: 5%;
+          padding: 2px;
+          color: white; }
+
+/*# sourceMappingURL=design.css.map */
